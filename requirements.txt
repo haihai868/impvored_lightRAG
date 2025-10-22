@@ -6,7 +6,7 @@ annotated-types==0.7.0
 anyio==4.10.0
 ascii_colors==0.11.4
 asyncpg==0.30.0
-attrs==25.3.0
+attrs==25.4.0
 bcrypt==4.3.0
 certifi==2025.8.3
 cffi==2.0.0
