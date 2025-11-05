@@ -1,0 +1,297 @@
+    ├─ Binding: openai
+    ├─ Host: https://generativelanguage.googleapis.com/v1beta/openai/
+    ├─ Model: gemini-embedding-001
+    └─ Dimensions: 3072
+
+⚙️ RAG Configuration:
+    ├─ Summary Language: English
+    ├─ Entity Types: ['Person', 'Organization', 'Location', 'Event', 'Concept', 'Method', 'Content', 'Data', 'Artifact', 'NaturalObject']
+    ├─ Max Parallel Insert: 2
+    ├─ Chunk Size: 1500
+    ├─ Chunk Overlap Size: 50
+    ├─ Cosine Threshold: 0.2
+    ├─ Top-K: 40
+    └─ Force LLM Summary on Merge: 8
+
+💾 Storage Configuration:
+    ├─ KV Storage: JsonKVStorage
+    ├─ Vector Storage: NanoVectorDBStorage
+    ├─ Graph Storage: NetworkXStorage
+    ├─ Document Status Storage: JsonDocStatusStorage
+    └─ Workspace: -
+
+✨ Server starting up...
+
+
+🌐 Server Access Information:
+    ├─ WebUI (local): http://localhost:9621
+    ├─ Remote Access: http://<your-ip-address>:9621
+    ├─ API Documentation (local): http://localhost:9621/docs
+    └─ Alternative Documentation (local): http://localhost:9621/redoc
+
+📝 Note:
+    Since the server is running on 0.0.0.0:
+    - Use 'localhost' or '127.0.0.1' for local access
+    - Use your machine's IP address for remote access
+    - To find your IP address:
+      • Windows: Run 'ipconfig' in terminal
+      • Linux/Mac: Run 'ifconfig' or 'ip addr' in terminal
+
+INFO: OpenAI LLM Options: {'max_completion_tokens': 9000}
+INFO: Reranking is disabled
+INFO: [_] Loaded graph from D:\LightRAG2\LightRAG\rag_storage\graph_chunk_entity_relation.graphml with 155 nodes, 144 edges
+Starting Uvicorn server in single-process mode on 0.0.0.0:9621
+INFO: Started server process [18072]
+INFO: Waiting for application startup.
+INFO: [_] Process 18072 KV load full_docs with 1 records
+INFO: [_] Process 18072 KV load text_chunks with 12 records
+INFO: [_] Process 18072 KV load full_entities with 1 records
+INFO: [_] Process 18072 KV load full_relations with 1 records
+INFO: [_] Process 18072 KV load llm_response_cache with 45 records
+INFO: [_] Process 18072 doc status load doc_status with 1 records
+
+Server is ready to accept connections! 🚀
+
+INFO: Application startup complete.
+INFO: Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+INFO: [_] Subgraph query successful | Node count: 155 | Edge count: 144
+
+ *  History restored 
+
+Microsoft Windows [Version 10.0.26200.6901]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\LightRAG2\LightRAG>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.26200.6901]
+Microsoft Windows [Version 10.0.26200.6901]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\LightRAG2\LightRAG>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.26200.6901]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\LightRAG2\LightRAG>venv\Scripts\activate
+
+(venv) D:\LightRAG2\LightRAG>lightrag-server
+
+LightRAG log file: D:\LightRAG2\LightRAG\lightrag.log
+
+WARNING:root:>> Forcing workers=1 in uvicorn mode(Ignoring workers=2)
+
+    ╔══════════════════════════════════════════════════════════════╗
+    ║                 LightRAG Server v1.4.9/0225                  ║
+    ║         Fast, Lightweight RAG Server Implementation          ║
+    ╚══════════════════════════════════════════════════════════════╝
+
+
+📡 Server Configuration:
+    ├─ Host: 0.0.0.0
+    ├─ Port: 9621
+    ├─ Workers: 1
+    ├─ Timeout: 300
+    ├─ CORS Origins: *
+    ├─ SSL Enabled: False
+    ├─ Ollama Emulating Model: lightrag:latest
+    ├─ Log Level: INFO
+    ├─ Verbose Debug: False
+    ├─ History Turns: 0
+    ├─ API Key: Not Set
+    └─ JWT Auth: Disabled
+
+📂 Directory Configuration:
+    ├─ Working Directory: D:\LightRAG2\LightRAG\rag_storage
+    └─ Input Directory: D:\LightRAG2\LightRAG\inputs
+
+🤖 LLM Configuration:
+    ├─ Binding: openai
+    ├─ Host: https://generativelanguage.googleapis.com/v1beta/
+    ├─ Model: gemini-2.5-flash-lite
+    ├─ Max Async for LLM: 2
+    ├─ Summary Context Size: 12000
+    ├─ LLM Cache Enabled: True
+    └─ LLM Cache for Extraction Enabled: True
+
+📊 Embedding Configuration:
+    ├─ Binding: openai
+    ├─ Host: https://generativelanguage.googleapis.com/v1beta/openai/
+    ├─ Model: gemini-embedding-001
+    └─ Dimensions: 3072
+
+⚙️ RAG Configuration:
+    ├─ Summary Language: English
+    ├─ Entity Types: ['Person', 'Organization', 'Location', 'Event', 'Concept', 'Method', 'Content', 'Data', 'Artifact', 'NaturalObject']
+    ├─ Max Parallel Insert: 2
+    ├─ Chunk Size: 1500
+    ├─ Chunk Overlap Size: 50
+    ├─ Cosine Threshold: 0.2
+    ├─ Top-K: 40
+    └─ Force LLM Summary on Merge: 8
+
+💾 Storage Configuration:
+    ├─ KV Storage: JsonKVStorage
+    ├─ Vector Storage: NanoVectorDBStorage
+    ├─ Graph Storage: NetworkXStorage
+    ├─ Document Status Storage: JsonDocStatusStorage
+    └─ Workspace: -
+
+✨ Server starting up...
+
+
+🌐 Server Access Information:
+    ├─ WebUI (local): http://localhost:9621
+    ├─ Remote Access: http://<your-ip-address>:9621
+    ├─ API Documentation (local): http://localhost:9621/docs
+    └─ Alternative Documentation (local): http://localhost:9621/redoc
+
+📝 Note:
+    Since the server is running on 0.0.0.0:
+    - Use 'localhost' or '127.0.0.1' for local access
+    - Use your machine's IP address for remote access
+    - To find your IP address:
+      • Windows: Run 'ipconfig' in terminal
+      • Linux/Mac: Run 'ifconfig' or 'ip addr' in terminal
+
+INFO: OpenAI LLM Options: {'max_completion_tokens': 9000}
+INFO: Reranking is disabled
+INFO: [_] Loaded graph from D:\LightRAG2\LightRAG\rag_storage\graph_chunk_entity_relation.graphml with 155 nodes, 144 edges
+Starting Uvicorn server in single-process mode on 0.0.0.0:9621
+INFO: Started server process [19792]
+INFO: Waiting for application startup.
+INFO: [_] Process 19792 KV load full_docs with 1 records
+INFO: [_] Process 19792 KV load text_chunks with 12 records
+INFO: [_] Process 19792 KV load full_entities with 1 records
+INFO: [_] Process 19792 KV load full_relations with 1 records
+INFO: [_] Process 19792 KV load llm_response_cache with 45 records
+INFO: [_] Process 19792 doc status load doc_status with 1 records
+
+Server is ready to accept connections! 🚀
+
+INFO: Application startup complete.
+INFO: Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+INFO: [_] Subgraph query successful | Node count: 155 | Edge count: 144
+INFO: LLM func: 2 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+INFO:  == LLM cache == saving: global:keywords:6895281441f8fdaabdd3ae171fa4dbfb
+INFO: Query edges: Understanding figures, Understanding diagrams, Scientific communication, Data visualization (top_k:40, cosine:0.2)
+INFO: Embedding func: 1 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+INFO: Global query: 42 entites, 40 relations
+INFO: Raw search results: 42 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 42 entities, 40 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+WARNING: Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+INFO: Final context: 42 entities, 40 relations, 2 chunks
+INFO: chunks: E25/1 E19/2
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+WARNING: low_level_keywords is empty
+INFO: Query edges: Details (top_k:40, cosine:0.2)
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+WARNING: low_level_keywords is empty
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+WARNING: low_level_keywords is empty
+INFO: 127.0.0.1:61926 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+WARNING: low_level_keywords is empty
+INFO:  == LLM cache == saving: hybrid:keywords:bb595a0a1363afcffed826b102c94957
+WARNING: low_level_keywords is empty
+WARNING: low_level_keywords is empty
+INFO: Query edges: Details (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 55 entities, 40 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 55 entities, 40 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 55 entities, 40 relations
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 55 entities, 40 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+INFO: Final context: 55 entities, 40 relations, 2 chunks
+INFO: chunks: E46/1 E11/2
+INFO: 127.0.0.1:55753 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: local:keywords:2b08c5d8d2fbae18ad07721ef33a1c90
+INFO: Raw search results: 55 entities, 40 relations, 0 vector chunks
+INFO: After truncation: 55 entities, 40 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+INFO: Final context: 55 entities, 40 relations, 2 chunks
+INFO: chunks: E46/1 E11/2
+INFO: 127.0.0.1:55753 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: local:keywords:2b08c5d8d2fbae18ad07721ef33a1c90
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 40 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+INFO: Final context: 55 entities, 40 relations, 2 chunks
+INFO: chunks: E46/1 E11/2
+INFO: 127.0.0.1:55753 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: local:keywords:2b08c5d8d2fbae18ad07721ef33a1c90
+INFO: chunks: E46/1 E11/2
+INFO: 127.0.0.1:55753 - "POST /query/stream HTTP/1.1" 200
+INFO:  == LLM cache == saving: local:keywords:2b08c5d8d2fbae18ad07721ef33a1c90
+INFO:  == LLM cache == saving: local:keywords:2b08c5d8d2fbae18ad07721ef33a1c90
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: After truncation: 40 entities, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: After truncation: 40 entities, 85 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 85 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: After truncation: 40 entities, 85 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: After truncation: 40 entities, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Query nodes: Third pass (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 85 relations
+INFO: Raw search results: 40 entities, 85 relations, 0 vector chunks
+INFO: After truncation: 40 entities, 85 relations
+INFO: Selecting 2 from 2 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 85 relations
+INFO: Round-robin merged chunks: 2 -> 2 (deduplication: 0)
+INFO: Final context: 40 entities, 85 relations, 2 chunks
+INFO: chunks: E10/1 E31/2
+INFO: 127.0.0.1:53360 - "POST /query/stream HTTP/1.1" 200

@@ -2063,15 +2063,15 @@ async def extract_entities(
         cache_keys_collector = []
 
         # Get initial extraction
-        entity_extraction_system_prompt = PROMPTS[
-            "entity_extraction_system_prompt"
-        ].format(**{**context_base, "input_text": content})
+        entity_extraction_system_prompt = PROMPTS["entity_extraction_system_prompt"].format(
+            **{**context_base, "input_text": content}
+        )
         entity_extraction_user_prompt = PROMPTS["entity_extraction_user_prompt"].format(
             **{**context_base, "input_text": content}
         )
-        entity_continue_extraction_user_prompt = PROMPTS[
-            "entity_continue_extraction_user_prompt"
-        ].format(**{**context_base, "input_text": content})
+        entity_continue_extraction_user_prompt = PROMPTS["entity_continue_extraction_user_prompt"].format(
+            **{**context_base, "input_text": content}
+        )
 
         final_result, timestamp = await use_llm_func_with_cache(
             entity_extraction_user_prompt,
@@ -3159,11 +3159,7 @@ async def _build_llm_context(
 """
 
     # Get token limits
-    max_total_tokens = getattr(
-        query_param,
-        "max_total_tokens",
-        global_config.get("max_total_tokens", DEFAULT_MAX_TOTAL_TOKENS),
-    )
+    max_total_tokens = getattr(query_param, "max_total_tokens", global_config.get("max_total_tokens", DEFAULT_MAX_TOTAL_TOKENS),)
 
     text_units_context = []
     truncated_chunks = []
