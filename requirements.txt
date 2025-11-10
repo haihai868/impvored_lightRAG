@@ -68,4 +68,4 @@ urllib3==2.5.0
 uvicorn==0.36.0
 wcwidth==0.2.13
 xlsxwriter==3.2.9
-yarl==1.20.1
+yarl==1.22.0
