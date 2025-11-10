@@ -28,7 +28,7 @@ idna==3.10
 jiter==0.11.0
 json_repair==0.51.0
 -e git+https://github.com/HKUDS/LightRAG.git@36f242c164d37ae765b48ee64661cf462a026fe5#egg=lightrag_hku
-multidict==6.6.4
+multidict==6.7.0
 nano-vectordb==0.0.4.3
 networkx==3.5
 numpy==2.3.3
