@@ -1,0 +1,157 @@
+{
+  "documents": [
+    {
+      "id": "doc1",
+      "text": "The University of Waterloo, located in Waterloo, Canada, developed the MapReduce method. Jeff Dean at Google later improved MapReduce for large-scale data processing.",
+      "entities": [
+        { "id": "University of Waterloo", "type": "Organization" },
+        { "id": "Waterloo", "type": "Location" },
+        { "id": "Canada", "type": "Location" },
+        { "id": "MapReduce", "type": "Method" },
+        { "id": "Jeff Dean", "type": "Person" },
+        { "id": "Google", "type": "Organization" },
+        { "id": "large-scale data processing", "type": "Concept" }
+      ],
+      "relations": [
+        {
+          "source": "University of Waterloo",
+          "relation": "located in",
+          "target": "Waterloo"
+        },
+        { "source": "Waterloo", "relation": "located in", "target": "Canada" },
+        {
+          "source": "University of Waterloo",
+          "relation": "developed",
+          "target": "MapReduce"
+        },
+        {
+          "source": "Jeff Dean",
+          "relation": "improved",
+          "target": "MapReduce"
+        },
+        { "source": "Jeff Dean", "relation": "works at", "target": "Google" },
+        {
+          "source": "MapReduce",
+          "relation": "used for",
+          "target": "large-scale data processing"
+        }
+      ]
+    },
+
+    {
+      "id": "doc2",
+      "text": "Albert Einstein introduced the theory of relativity. The theory fundamentally changed physics and led to the development of nuclear energy.",
+      "entities": [
+        { "id": "Albert Einstein", "type": "Person" },
+        { "id": "the theory of relativity", "type": "Concept" },
+        { "id": "physics", "type": "Concept" },
+        { "id": "nuclear energy", "type": "Concept" }
+      ],
+      "relations": [
+        {
+          "source": "Albert Einstein",
+          "relation": "introduced",
+          "target": "the theory of relativity"
+        },
+        {
+          "source": "the theory of relativity",
+          "relation": "changed",
+          "target": "physics"
+        },
+        {
+          "source": "the theory of relativity",
+          "relation": "led to",
+          "target": "nuclear energy"
+        }
+      ]
+    },
+
+    {
+      "id": "doc3",
+      "text": "The Amazon rainforest contains millions of species and is often called the lungs of the Earth. Deforestation in the region is increasing each year.",
+      "entities": [
+        { "id": "Amazon rainforest", "type": "NaturalObject" },
+        { "id": "species", "type": "NaturalObject" },
+        { "id": "Earth", "type": "NaturalObject" },
+        { "id": "Deforestation", "type": "Event" },
+        { "id": "the region", "type": "Location" }
+      ],
+      "relations": [
+        {
+          "source": "Amazon rainforest",
+          "relation": "contains",
+          "target": "species"
+        },
+        {
+          "source": "Amazon rainforest",
+          "relation": "part of",
+          "target": "Earth"
+        },
+        {
+          "source": "Deforestation",
+          "relation": "occurs in",
+          "target": "the region"
+        }
+      ]
+    },
+
+    {
+      "id": "doc4",
+      "text": "NASA launched the James Webb Space Telescope, an advanced artifact designed to observe distant galaxies. The launch event occurred in December 2021.",
+      "entities": [
+        { "id": "NASA", "type": "Organization" },
+        { "id": "James Webb Space Telescope", "type": "Artifact" },
+        { "id": "distant galaxies", "type": "NaturalObject" },
+        { "id": "launch event", "type": "Event" },
+        { "id": "December 2021", "type": "Event" }
+      ],
+      "relations": [
+        {
+          "source": "NASA",
+          "relation": "launched",
+          "target": "James Webb Space Telescope"
+        },
+        {
+          "source": "James Webb Space Telescope",
+          "relation": "designed to observe",
+          "target": "distant galaxies"
+        },
+        {
+          "source": "launch event",
+          "relation": "occurred in",
+          "target": "December 2021"
+        }
+      ]
+    },
+
+    {
+      "id": "doc5",
+      "text": "OpenAI released GPT-4, a content generation system trained on vast amounts of data. The model quickly became a widely used artifact in software engineering.",
+      "entities": [
+        { "id": "OpenAI", "type": "Organization" },
+        { "id": "GPT-4", "type": "Content" },
+        { "id": "content generation system", "type": "Artifact" },
+        { "id": "data", "type": "Data" },
+        { "id": "software engineering", "type": "Concept" }
+      ],
+      "relations": [
+        { "source": "OpenAI", "relation": "released", "target": "GPT-4" },
+        {
+          "source": "GPT-4",
+          "relation": "is a",
+          "target": "content generation system"
+        },
+        {
+          "source": "content generation system",
+          "relation": "trained on",
+          "target": "data"
+        },
+        {
+          "source": "GPT-4",
+          "relation": "used in",
+          "target": "software engineering"
+        }
+      ]
+    }
+  ]
+}

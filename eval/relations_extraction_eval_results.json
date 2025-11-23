@@ -1,0 +1,110 @@
+{
+  "precision": 0.10526315789473684,
+  "recall": 0.10526315789473684,
+  "f1": 0.10526315789473684,
+  "matched_relations": [
+    ["amazon rainforest", "contains", "species"],
+    ["gpt-4", "used in", "software engineering"]
+  ],
+  "missing_relations": [
+    ["university of waterloo", "developed", "mapreduce"],
+    ["the theory of relativity", "changed", "physics"],
+    ["james webb space telescope", "designed to observe", "distant galaxies"],
+    ["content generation system", "trained on", "data"],
+    ["launch event", "occurred in", "december 2021"],
+    ["the theory of relativity", "led to", "nuclear energy"],
+    ["albert einstein", "introduced", "the theory of relativity"],
+    ["amazon rainforest", "part of", "earth"],
+    ["nasa", "launched", "james webb space telescope"],
+    ["jeff dean", "works at", "google"],
+    ["university of waterloo", "located in", "waterloo"],
+    ["deforestation", "occurs in", "the region"],
+    ["openai", "released", "gpt-4"],
+    ["jeff dean", "improved", "mapreduce"],
+    ["mapreduce", "used for", "large-scale data processing"],
+    ["gpt-4", "is a", "content generation system"],
+    ["waterloo", "located in", "canada"]
+  ],
+  "extra_relations": [
+    [
+      "december 2021",
+      "the launch event occurred in december 2021.",
+      "launch event"
+    ],
+    [
+      "nuclear energy",
+      "the theory of relativity led to the development of nuclear energy.",
+      "theory of relativity"
+    ],
+    [
+      "amazon rainforest",
+      "deforestation is an increasing problem occurring within the amazon rainforest.",
+      "deforestation"
+    ],
+    [
+      "launch event",
+      "nasa conducted the launch event for the james webb space telescope.",
+      "nasa"
+    ],
+    [
+      "mapreduce method",
+      "the university of waterloo developed the mapreduce method.",
+      "university of waterloo"
+    ],
+    [
+      "gpt-4",
+      "openai developed and released the gpt-4 content generation system.",
+      "openai"
+    ],
+    [
+      "james webb space telescope",
+      "nasa launched the james webb space telescope.",
+      "nasa"
+    ],
+    [
+      "amazon rainforest",
+      "the amazon rainforest is commonly referred to as the 'lungs of the earth' due to its importance in oxygen production.",
+      "lungs of the earth"
+    ],
+    [
+      "jeff dean",
+      "jeff dean improved the mapreduce method for large-scale data processing.",
+      "mapreduce method"
+    ],
+    [
+      "distant galaxies",
+      "the james webb space telescope is designed to observe distant galaxies.",
+      "james webb space telescope"
+    ],
+    [
+      "university of waterloo",
+      "the university of waterloo is situated in waterloo, canada.",
+      "waterloo, canada"
+    ],
+    [
+      "james webb space telescope",
+      "the launch event was for the james webb space telescope.",
+      "launch event"
+    ],
+    [
+      "physics",
+      "the theory of relativity fundamentally changed the field of physics.",
+      "theory of relativity"
+    ],
+    [
+      "gpt-4",
+      "gpt-4 was trained on vast amounts of data.",
+      "vast amounts of data"
+    ],
+    [
+      "albert einstein",
+      "albert einstein introduced the theory of relativity.",
+      "theory of relativity"
+    ],
+    ["data", "gpt-4 was trained on vast amounts of data.", "gpt-4"],
+    ["google", "jeff dean is associated with google.", "jeff dean"]
+  ],
+  "tp": 2,
+  "fp": 17,
+  "fn": 17
+}

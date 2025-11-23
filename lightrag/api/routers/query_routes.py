@@ -6,7 +6,7 @@ import json
 import logging
 from typing import Any, Dict, List, Literal, Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Body
 from lightrag.base import QueryParam
 from ..utils_api import get_combined_auth_dependency
 from pydantic import BaseModel, Field, field_validator
@@ -173,6 +173,41 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
         try:
             param = request.to_query_params(False)
             response = await rag.aquery(request.query, param=param)
+
+            # If response is a string (e.g. cache hit), return directly
+            if isinstance(response, str):
+                return QueryResponse(response=response)
+
+            if isinstance(response, dict):
+                result = json.dumps(response, indent=2)
+                return QueryResponse(response=result)
+            else:
+                return QueryResponse(response=str(response))
+        except Exception as e:
+            trace_exception(e)
+            raise HTTPException(status_code=500, detail=str(e))
+        
+    @router.post(
+        "/query/sysprompt", response_model=QueryResponse, dependencies=[Depends(combined_auth)]
+    )
+    async def query_text(request: QueryRequest = Body(...), sys_prompt: str | None = Body(default=None)):
+        """
+        Handle a POST request at the /query endpoint to process user queries using RAG capabilities.
+
+        Parameters:
+            request (QueryRequest): The request object containing the query parameters.
+        Returns:
+            QueryResponse: A Pydantic model containing the result of the query processing.
+                       If a string is returned (e.g., cache hit), it's directly returned.
+                       Otherwise, an async generator may be used to build the response.
+
+        Raises:
+            HTTPException: Raised when an error occurs during the request handling process,
+                       with status code 500 and detail containing the exception message.
+        """
+        try:
+            param = request.to_query_params(False)
+            response = await rag.aquery(request.query, param=param, system_prompt=sys_prompt)
 
             # If response is a string (e.g. cache hit), return directly
             if isinstance(response, str):

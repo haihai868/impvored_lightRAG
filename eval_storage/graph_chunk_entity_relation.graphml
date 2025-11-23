@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d10" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d9" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d8" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d7" for="edge" attr.name="description" attr.type="string" />
+  <key id="d6" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="OpenAI">
+      <data key="d0">OpenAI</data>
+      <data key="d1">Organization</data>
+      <data key="d2">OpenAI is the creator of the GPT-4 content generation system.</data>
+      <data key="d3">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="GPT-4">
+      <data key="d0">GPT-4</data>
+      <data key="d1">Content</data>
+      <data key="d2">GPT-4 is a content generation system trained on vast amounts of data and widely used in software engineering.</data>
+      <data key="d3">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Software Engineering">
+      <data key="d0">Software Engineering</data>
+      <data key="d1">Concept</data>
+      <data key="d2">Software engineering is a field where GPT-4 has become a widely used artifact.</data>
+      <data key="d3">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Vast Amounts of Data">
+      <data key="d0">Vast Amounts of Data</data>
+      <data key="d1">Data</data>
+      <data key="d2">Vast amounts of data were used to train the GPT-4 model.</data>
+      <data key="d3">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Amazon Rainforest">
+      <data key="d0">Amazon Rainforest</data>
+      <data key="d1">Location</data>
+      <data key="d2">The Amazon rainforest is a vast ecosystem that contains millions of species and is metaphorically referred to as the lungs of the Earth.</data>
+      <data key="d3">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Species">
+      <data key="d0">Species</data>
+      <data key="d1">Naturalobject</data>
+      <data key="d2">Millions of species inhabit the Amazon rainforest.</data>
+      <data key="d3">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Lungs of the Earth">
+      <data key="d0">Lungs of the Earth</data>
+      <data key="d1">Concept</data>
+      <data key="d2">This metaphor is used to describe the vital role of the Amazon rainforest in global oxygen production.</data>
+      <data key="d3">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Deforestation">
+      <data key="d0">Deforestation</data>
+      <data key="d1">Concept</data>
+      <data key="d2">Deforestation is the process of clearing forests, and it is increasing annually in the Amazon region.</data>
+      <data key="d3">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222114</data>
+    </node>
+    <node id="Data">
+      <data key="d0">Data</data>
+      <data key="d3">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d2">GPT-4 was trained on vast amounts of data.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222125</data>
+    </node>
+    <node id="NASA">
+      <data key="d0">NASA</data>
+      <data key="d1">Organization</data>
+      <data key="d2">NASA is the organization that launched the James Webb Space Telescope.</data>
+      <data key="d3">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222136</data>
+    </node>
+    <node id="James Webb Space Telescope">
+      <data key="d0">James Webb Space Telescope</data>
+      <data key="d1">Artifact</data>
+      <data key="d2">The James Webb Space Telescope is an advanced artifact designed to observe distant galaxies.</data>
+      <data key="d3">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222136</data>
+    </node>
+    <node id="Distant Galaxies">
+      <data key="d0">Distant Galaxies</data>
+      <data key="d1">Naturalobject</data>
+      <data key="d2">Distant galaxies are celestial objects that the James Webb Space Telescope is designed to observe.</data>
+      <data key="d3">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222136</data>
+    </node>
+    <node id="Launch Event">
+      <data key="d0">Launch Event</data>
+      <data key="d1">Event</data>
+      <data key="d2">The launch event of the James Webb Space Telescope occurred in December 2021.</data>
+      <data key="d3">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222136</data>
+    </node>
+    <node id="December 2021">
+      <data key="d0">December 2021</data>
+      <data key="d1">Date</data>
+      <data key="d2">December 2021 is the month and year when the James Webb Space Telescope was launched.</data>
+      <data key="d3">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222137</data>
+    </node>
+    <node id="University of Waterloo">
+      <data key="d0">University of Waterloo</data>
+      <data key="d1">Organization</data>
+      <data key="d2">The University of Waterloo is an institution located in Waterloo, Canada, that developed the MapReduce method.</data>
+      <data key="d3">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222138</data>
+    </node>
+    <node id="Waterloo, Canada">
+      <data key="d0">Waterloo, Canada</data>
+      <data key="d1">Location</data>
+      <data key="d2">Waterloo, Canada, is the location of the University of Waterloo.</data>
+      <data key="d3">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222138</data>
+    </node>
+    <node id="MapReduce Method">
+      <data key="d0">MapReduce Method</data>
+      <data key="d1">Method</data>
+      <data key="d2">The MapReduce method was developed by the University of Waterloo and later improved by Jeff Dean at Google for large-scale data processing.</data>
+      <data key="d3">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222138</data>
+    </node>
+    <node id="Jeff Dean">
+      <data key="d0">Jeff Dean</data>
+      <data key="d1">Person</data>
+      <data key="d2">Jeff Dean is an individual at Google who improved the MapReduce method for large-scale data processing.</data>
+      <data key="d3">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222138</data>
+    </node>
+    <node id="Google">
+      <data key="d0">Google</data>
+      <data key="d1">Organization</data>
+      <data key="d2">Google is a company where Jeff Dean improved the MapReduce method.</data>
+      <data key="d3">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222142</data>
+    </node>
+    <node id="Albert Einstein">
+      <data key="d0">Albert Einstein</data>
+      <data key="d1">Person</data>
+      <data key="d2">Albert Einstein was a physicist who introduced the theory of relativity.</data>
+      <data key="d3">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222158</data>
+    </node>
+    <node id="Theory of Relativity">
+      <data key="d0">Theory of Relativity</data>
+      <data key="d1">Concept</data>
+      <data key="d2">The theory of relativity is a fundamental concept in physics that revolutionized the field and led to the development of nuclear energy.</data>
+      <data key="d3">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222158</data>
+    </node>
+    <node id="Physics">
+      <data key="d0">Physics</data>
+      <data key="d1">Concept</data>
+      <data key="d2">Physics is a scientific field that was fundamentally changed by the theory of relativity.</data>
+      <data key="d3">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222158</data>
+    </node>
+    <node id="Nuclear Energy">
+      <data key="d0">Nuclear Energy</data>
+      <data key="d1">Concept</data>
+      <data key="d2">Nuclear energy is a form of energy whose development was a consequence of the theory of relativity.</data>
+      <data key="d3">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1763222158</data>
+    </node>
+    <edge source="OpenAI" target="GPT-4">
+      <data key="d6">1.0</data>
+      <data key="d7">OpenAI developed and released the GPT-4 content generation system.</data>
+      <data key="d8">created,developed</data>
+      <data key="d9">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222118</data>
+    </edge>
+    <edge source="GPT-4" target="Software Engineering">
+      <data key="d6">1.0</data>
+      <data key="d7">GPT-4 is a widely used artifact within the field of software engineering.</data>
+      <data key="d8">application,artifact</data>
+      <data key="d9">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222123</data>
+    </edge>
+    <edge source="GPT-4" target="Data">
+      <data key="d6">1.0</data>
+      <data key="d7">GPT-4 was trained on vast amounts of data.</data>
+      <data key="d8">trained on</data>
+      <data key="d9">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222125</data>
+    </edge>
+    <edge source="GPT-4" target="Vast Amounts of Data">
+      <data key="d6">1.0</data>
+      <data key="d7">GPT-4 was trained on vast amounts of data.</data>
+      <data key="d8">training data</data>
+      <data key="d9">chunk-d2cb63476e0a7f765cae032fea30f5fa</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222129</data>
+    </edge>
+    <edge source="Amazon Rainforest" target="Species">
+      <data key="d6">1.0</data>
+      <data key="d7">The Amazon rainforest is home to millions of species.</data>
+      <data key="d8">biodiversity,habitat</data>
+      <data key="d9">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222122</data>
+    </edge>
+    <edge source="Amazon Rainforest" target="Lungs of the Earth">
+      <data key="d6">1.0</data>
+      <data key="d7">The Amazon rainforest is commonly referred to as the 'lungs of the Earth' due to its importance in oxygen production.</data>
+      <data key="d8">ecological significance,metaphor</data>
+      <data key="d9">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222124</data>
+    </edge>
+    <edge source="Amazon Rainforest" target="Deforestation">
+      <data key="d6">1.0</data>
+      <data key="d7">Deforestation is an increasing problem occurring within the Amazon rainforest.</data>
+      <data key="d8">environmental issue,impact</data>
+      <data key="d9">chunk-61038df4ae2e4285f9282b7a3cd31b2a</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222126</data>
+    </edge>
+    <edge source="NASA" target="James Webb Space Telescope">
+      <data key="d6">1.0</data>
+      <data key="d7">NASA launched the James Webb Space Telescope.</data>
+      <data key="d8">development,launch</data>
+      <data key="d9">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222141</data>
+    </edge>
+    <edge source="NASA" target="Launch Event">
+      <data key="d6">1.0</data>
+      <data key="d7">NASA conducted the launch event for the James Webb Space Telescope.</data>
+      <data key="d8">conducted,occurred</data>
+      <data key="d9">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222146</data>
+    </edge>
+    <edge source="James Webb Space Telescope" target="Distant Galaxies">
+      <data key="d6">1.0</data>
+      <data key="d7">The James Webb Space Telescope is designed to observe distant galaxies.</data>
+      <data key="d8">observation,scientific purpose</data>
+      <data key="d9">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222146</data>
+    </edge>
+    <edge source="James Webb Space Telescope" target="Launch Event">
+      <data key="d6">1.0</data>
+      <data key="d7">The launch event was for the James Webb Space Telescope.</data>
+      <data key="d8">related to,target</data>
+      <data key="d9">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222150</data>
+    </edge>
+    <edge source="Launch Event" target="December 2021">
+      <data key="d6">1.0</data>
+      <data key="d7">The launch event occurred in December 2021.</data>
+      <data key="d8">occurred in,timing</data>
+      <data key="d9">chunk-8b2fed0b06f595cb75c9a9b3b1c115d3</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222147</data>
+    </edge>
+    <edge source="University of Waterloo" target="Waterloo, Canada">
+      <data key="d6">1.0</data>
+      <data key="d7">The University of Waterloo is situated in Waterloo, Canada.</data>
+      <data key="d8">location</data>
+      <data key="d9">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222146</data>
+    </edge>
+    <edge source="University of Waterloo" target="MapReduce Method">
+      <data key="d6">1.0</data>
+      <data key="d7">The University of Waterloo developed the MapReduce method.</data>
+      <data key="d8">created,developed</data>
+      <data key="d9">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222149</data>
+    </edge>
+    <edge source="MapReduce Method" target="Jeff Dean">
+      <data key="d6">1.0</data>
+      <data key="d7">Jeff Dean improved the MapReduce method for large-scale data processing.</data>
+      <data key="d8">enhanced,improved</data>
+      <data key="d9">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222152</data>
+    </edge>
+    <edge source="Jeff Dean" target="Google">
+      <data key="d6">1.0</data>
+      <data key="d7">Jeff Dean is associated with Google.</data>
+      <data key="d8">affiliation</data>
+      <data key="d9">chunk-e72e08e4fa9e533abb8ba856eee5d7fc</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222146</data>
+    </edge>
+    <edge source="Albert Einstein" target="Theory of Relativity">
+      <data key="d6">1.0</data>
+      <data key="d7">Albert Einstein introduced the theory of relativity.</data>
+      <data key="d8">introduction,scientific contribution</data>
+      <data key="d9">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222162</data>
+    </edge>
+    <edge source="Theory of Relativity" target="Physics">
+      <data key="d6">1.0</data>
+      <data key="d7">The theory of relativity fundamentally changed the field of physics.</data>
+      <data key="d8">fundamental change,impact</data>
+      <data key="d9">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222163</data>
+    </edge>
+    <edge source="Theory of Relativity" target="Nuclear Energy">
+      <data key="d6">1.0</data>
+      <data key="d7">The theory of relativity led to the development of nuclear energy.</data>
+      <data key="d8">consequence,development</data>
+      <data key="d9">chunk-a93a573fdb2662e2f3503832dad19888</data>
+      <data key="d10">unknown_source</data>
+      <data key="d11">1763222164</data>
+    </edge>
+  </graph>
+</graphml>

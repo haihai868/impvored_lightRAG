@@ -1,0 +1,33 @@
+{
+  "precision": 0.6086956521739131,
+  "recall": 0.5384615384615384,
+  "f1": 0.5714285714285715,
+  "type_accuracy": 0.7777777777777778,
+  "missing_entities": [
+    "waterloo",
+    "canada",
+    "mapreduce",
+    "large-scale data processing",
+    "the theory of relativity",
+    "earth",
+    "the region",
+    "content generation system"
+  ],
+  "extra_entities": [
+    "lungs of the earth",
+    "theory of relativity",
+    "vast amounts of data",
+    "waterloo, canada",
+    "mapreduce method"
+  ],
+  "wrong_type_entities": [
+    ["amazon rainforest", "naturalobject", "location"],
+    ["deforestation", "event", "concept"],
+    ["december 2021", "event", "date"],
+    ["data", "data", "unknown"]
+  ],
+  "tp": 14,
+  "fp": 5,
+  "fn": 8,
+  "wrong_type": 4
+}

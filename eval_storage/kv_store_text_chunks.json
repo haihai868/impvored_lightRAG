@@ -1,0 +1,72 @@
+{
+  "chunk-d2cb63476e0a7f765cae032fea30f5fa": {
+    "tokens": 30,
+    "content": "OpenAI released GPT-4, a content generation system trained on vast amounts of data. The model quickly became a widely used artifact in software engineering.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-d2cb63476e0a7f765cae032fea30f5fa",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1314f1acb6b90cc8cc2542f1eb348a7f",
+      "default:extract:900c7eda878479fa9844dba912c6dae0"
+    ],
+    "create_time": 1763222106,
+    "update_time": 1763222114,
+    "_id": "chunk-d2cb63476e0a7f765cae032fea30f5fa"
+  },
+  "chunk-61038df4ae2e4285f9282b7a3cd31b2a": {
+    "tokens": 28,
+    "content": "The Amazon rainforest contains millions of species and is often called the lungs of the Earth. Deforestation in the region is increasing each year.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-61038df4ae2e4285f9282b7a3cd31b2a",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d3030c4562b3a6f907b3fa7ed113db24",
+      "default:extract:ce359575e069a4670d66641d74df12c7"
+    ],
+    "create_time": 1763222106,
+    "update_time": 1763222114,
+    "_id": "chunk-61038df4ae2e4285f9282b7a3cd31b2a"
+  },
+  "chunk-8b2fed0b06f595cb75c9a9b3b1c115d3": {
+    "tokens": 27,
+    "content": "NASA launched the James Webb Space Telescope, an advanced artifact designed to observe distant galaxies. The launch event occurred in December 2021.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-8b2fed0b06f595cb75c9a9b3b1c115d3",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:54b56f5f4b0e18b7c59eee89cc334d27",
+      "default:extract:0ff64d7d93b63dc05e5804223bd9856e"
+    ],
+    "create_time": 1763222128,
+    "update_time": 1763222136,
+    "_id": "chunk-8b2fed0b06f595cb75c9a9b3b1c115d3"
+  },
+  "chunk-e72e08e4fa9e533abb8ba856eee5d7fc": {
+    "tokens": 31,
+    "content": "The University of Waterloo, located in Waterloo, Canada, developed the MapReduce method. Jeff Dean at Google later improved MapReduce for large-scale data processing.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-e72e08e4fa9e533abb8ba856eee5d7fc",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2c50b8eef9989f0877919331da98a149",
+      "default:extract:f8113634890140ca5c4da8c0df6931ff"
+    ],
+    "create_time": 1763222131,
+    "update_time": 1763222138,
+    "_id": "chunk-e72e08e4fa9e533abb8ba856eee5d7fc"
+  },
+  "chunk-a93a573fdb2662e2f3503832dad19888": {
+    "tokens": 23,
+    "content": "Albert Einstein introduced the theory of relativity. The theory fundamentally changed physics and led to the development of nuclear energy.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-a93a573fdb2662e2f3503832dad19888",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3f64ee57ff3a62a9a2a90f01cc656020",
+      "default:extract:aa14095f48d041d4fb8ccffb6f6c175e"
+    ],
+    "create_time": 1763222153,
+    "update_time": 1763222158,
+    "_id": "chunk-a93a573fdb2662e2f3503832dad19888"
+  }
+}

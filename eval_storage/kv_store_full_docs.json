@@ -1,0 +1,32 @@
+{
+  "doc-d2cb63476e0a7f765cae032fea30f5fa": {
+    "content": "OpenAI released GPT-4, a content generation system trained on vast amounts of data. The model quickly became a widely used artifact in software engineering.",
+    "create_time": 1763222106,
+    "update_time": 1763222106,
+    "_id": "doc-d2cb63476e0a7f765cae032fea30f5fa"
+  },
+  "doc-61038df4ae2e4285f9282b7a3cd31b2a": {
+    "content": "The Amazon rainforest contains millions of species and is often called the lungs of the Earth. Deforestation in the region is increasing each year.",
+    "create_time": 1763222106,
+    "update_time": 1763222106,
+    "_id": "doc-61038df4ae2e4285f9282b7a3cd31b2a"
+  },
+  "doc-8b2fed0b06f595cb75c9a9b3b1c115d3": {
+    "content": "NASA launched the James Webb Space Telescope, an advanced artifact designed to observe distant galaxies. The launch event occurred in December 2021.",
+    "create_time": 1763222106,
+    "update_time": 1763222106,
+    "_id": "doc-8b2fed0b06f595cb75c9a9b3b1c115d3"
+  },
+  "doc-e72e08e4fa9e533abb8ba856eee5d7fc": {
+    "content": "The University of Waterloo, located in Waterloo, Canada, developed the MapReduce method. Jeff Dean at Google later improved MapReduce for large-scale data processing.",
+    "create_time": 1763222106,
+    "update_time": 1763222106,
+    "_id": "doc-e72e08e4fa9e533abb8ba856eee5d7fc"
+  },
+  "doc-a93a573fdb2662e2f3503832dad19888": {
+    "content": "Albert Einstein introduced the theory of relativity. The theory fundamentally changed physics and led to the development of nuclear energy.",
+    "create_time": 1763222106,
+    "update_time": 1763222106,
+    "_id": "doc-a93a573fdb2662e2f3503832dad19888"
+  }
+}

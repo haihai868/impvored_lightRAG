@@ -1,0 +1,65 @@
+{
+  "doc-61038df4ae2e4285f9282b7a3cd31b2a": {
+    "entity_names": [
+      "Species",
+      "Amazon Rainforest",
+      "Deforestation",
+      "Lungs of the Earth"
+    ],
+    "count": 4,
+    "create_time": 1763222128,
+    "update_time": 1763222128,
+    "_id": "doc-61038df4ae2e4285f9282b7a3cd31b2a"
+  },
+  "doc-d2cb63476e0a7f765cae032fea30f5fa": {
+    "entity_names": [
+      "OpenAI",
+      "Vast Amounts of Data",
+      "Software Engineering",
+      "GPT-4",
+      "Data"
+    ],
+    "count": 5,
+    "create_time": 1763222131,
+    "update_time": 1763222131,
+    "_id": "doc-d2cb63476e0a7f765cae032fea30f5fa"
+  },
+  "doc-8b2fed0b06f595cb75c9a9b3b1c115d3": {
+    "entity_names": [
+      "Launch Event",
+      "NASA",
+      "James Webb Space Telescope",
+      "December 2021",
+      "Distant Galaxies"
+    ],
+    "count": 5,
+    "create_time": 1763222152,
+    "update_time": 1763222152,
+    "_id": "doc-8b2fed0b06f595cb75c9a9b3b1c115d3"
+  },
+  "doc-e72e08e4fa9e533abb8ba856eee5d7fc": {
+    "entity_names": [
+      "MapReduce Method",
+      "Google",
+      "University of Waterloo",
+      "Waterloo, Canada",
+      "Jeff Dean"
+    ],
+    "count": 5,
+    "create_time": 1763222153,
+    "update_time": 1763222153,
+    "_id": "doc-e72e08e4fa9e533abb8ba856eee5d7fc"
+  },
+  "doc-a93a573fdb2662e2f3503832dad19888": {
+    "entity_names": [
+      "Albert Einstein",
+      "Theory of Relativity",
+      "Nuclear Energy",
+      "Physics"
+    ],
+    "count": 4,
+    "create_time": 1763222165,
+    "update_time": 1763222165,
+    "_id": "doc-a93a573fdb2662e2f3503832dad19888"
+  }
+}

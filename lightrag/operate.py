@@ -2372,6 +2372,7 @@ async def kg_query(
         query_param,
         chunks_vdb,
     )
+    
 
     if query_param.only_need_context and not query_param.only_need_prompt:
         return context if context is not None else PROMPTS["fail_response"]
@@ -2445,8 +2446,15 @@ async def kg_query(
             ),
         )
 
-    return response
+    # record = {
+    #     "question": query,
+    #     "contexts": context,
+    #     "answer": response,
+    # }
+    # with open('eval/data/generation.jsonl', "a", encoding="utf-8") as f:
+    #     f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
+    return response
 
 async def get_keywords_from_query(
     query: str,
@@ -4304,5 +4312,15 @@ async def naive_query(
                 queryparam=queryparam_dict,
             ),
         )
+
+    # Log the query, context, and response to a JSONL file for prompt optimization
+    record = {
+        "query": query,
+        "context": text_units_str,
+        "answer": response
+    }
+
+    with open('optim_prompt/data/naive_query_results.jsonl', "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
     return response

@@ -150,7 +150,7 @@ class QueryParam:
 
     user_prompt: str | None = None
     """User-provided prompt for the query.
-    If proivded, this will be use instead of the default vaulue from prompt template.
+    If provided, this will be use instead of the default value from prompt template.
     """
 
     enable_rerank: bool = os.getenv("RERANK_BY_DEFAULT", "true").lower() == "true"
@@ -647,7 +647,7 @@ class BaseGraphStorage(StorageNameSpace, ABC):
         Args:
             node_label: Label of the starting node，* means all nodes
             max_depth: Maximum depth of the subgraph, Defaults to 3
-            max_nodes: Maxiumu nodes to return, Defaults to 1000（BFS if possible)
+            max_nodes: Maximum nodes to return, Defaults to 1000（BFS if possible)
 
         Returns:
             KnowledgeGraph object containing nodes and edges, with an is_truncated flag

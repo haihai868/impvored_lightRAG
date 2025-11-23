@@ -1,0 +1,118 @@
+{
+  "doc-61038df4ae2e4285f9282b7a3cd31b2a": {
+    "relation_pairs": [
+      [
+        "Amazon Rainforest",
+        "Species"
+      ],
+      [
+        "Amazon Rainforest",
+        "Lungs of the Earth"
+      ],
+      [
+        "Amazon Rainforest",
+        "Deforestation"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1763222128,
+    "update_time": 1763222128,
+    "_id": "doc-61038df4ae2e4285f9282b7a3cd31b2a"
+  },
+  "doc-d2cb63476e0a7f765cae032fea30f5fa": {
+    "relation_pairs": [
+      [
+        "GPT-4",
+        "Vast Amounts of Data"
+      ],
+      [
+        "GPT-4",
+        "Software Engineering"
+      ],
+      [
+        "GPT-4",
+        "OpenAI"
+      ],
+      [
+        "Data",
+        "GPT-4"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1763222131,
+    "update_time": 1763222131,
+    "_id": "doc-d2cb63476e0a7f765cae032fea30f5fa"
+  },
+  "doc-8b2fed0b06f595cb75c9a9b3b1c115d3": {
+    "relation_pairs": [
+      [
+        "James Webb Space Telescope",
+        "NASA"
+      ],
+      [
+        "Distant Galaxies",
+        "James Webb Space Telescope"
+      ],
+      [
+        "James Webb Space Telescope",
+        "Launch Event"
+      ],
+      [
+        "Launch Event",
+        "NASA"
+      ],
+      [
+        "December 2021",
+        "Launch Event"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1763222152,
+    "update_time": 1763222152,
+    "_id": "doc-8b2fed0b06f595cb75c9a9b3b1c115d3"
+  },
+  "doc-e72e08e4fa9e533abb8ba856eee5d7fc": {
+    "relation_pairs": [
+      [
+        "Google",
+        "Jeff Dean"
+      ],
+      [
+        "University of Waterloo",
+        "Waterloo, Canada"
+      ],
+      [
+        "Jeff Dean",
+        "MapReduce Method"
+      ],
+      [
+        "MapReduce Method",
+        "University of Waterloo"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1763222153,
+    "update_time": 1763222153,
+    "_id": "doc-e72e08e4fa9e533abb8ba856eee5d7fc"
+  },
+  "doc-a93a573fdb2662e2f3503832dad19888": {
+    "relation_pairs": [
+      [
+        "Albert Einstein",
+        "Theory of Relativity"
+      ],
+      [
+        "Physics",
+        "Theory of Relativity"
+      ],
+      [
+        "Nuclear Energy",
+        "Theory of Relativity"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1763222165,
+    "update_time": 1763222165,
+    "_id": "doc-a93a573fdb2662e2f3503832dad19888"
+  }
+}
