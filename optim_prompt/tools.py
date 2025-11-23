@@ -17,7 +17,7 @@ def call_sysprompt_api(system_prompt: str, query: str) -> dict:
             "mode": "naive",
             "top_k": 1,
             "chunk_top_k": 1,
-            "max_total_tokens": 9000,
+            "max_total_tokens": 2000,
             "history_turns": 0,
             "enable_rerank": False
         },

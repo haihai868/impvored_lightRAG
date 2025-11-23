@@ -9,6 +9,7 @@ ascii_colors==0.11.4
 asyncpg==0.30.0
 attrs==25.3.0
 bcrypt==4.3.0
+cachetools==6.2.2
 certifi==2025.8.3
 cffi==2.0.0
 cfgv==3.4.0
@@ -28,12 +29,19 @@ dotenv==0.9.9
 ecdsa==0.19.1
 fastapi==0.116.2
 filelock==3.20.0
+filetype==1.2.0
 frozenlist==1.7.0
 fsspec==2024.3.1
 future==1.0.0
 gitdb==4.0.12
 GitPython==3.1.45
+google-ai-generativelanguage==0.9.0
+google-api-core==2.28.1
+google-auth==2.43.0
+googleapis-common-protos==1.72.0
 greenlet==3.2.4
+grpcio==1.76.0
+grpcio-status==1.76.0
 h11==0.16.0
 httpcore==1.0.9
 httpx==0.28.1
@@ -51,6 +59,7 @@ langchain==1.0.7
 langchain-classic==1.0.0
 langchain-community==0.4.1
 langchain-core==1.0.5
+langchain-google-genai==3.0.3
 langchain-openai==1.0.3
 langchain-text-splitters==1.0.0
 langgraph==1.0.3
@@ -58,7 +67,7 @@ langgraph-checkpoint==3.0.1
 langgraph-prebuilt==1.0.4
 langgraph-sdk==0.2.9
 langsmith==0.4.43
--e git+https://github.com/haihai868/impvored_lightRAG.git@5f69eab0ad84e48fda4030b543a03503f96709d4#egg=lightrag_hku
+-e git+https://github.com/haihai868/impvored_lightRAG.git@d104a56cfc371ab6f25bba5e87e57e17f70273d8#egg=lightrag_hku
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 marshmallow==3.26.1
@@ -82,10 +91,13 @@ pipmaster==1.0.4
 platformdirs==4.5.0
 pre_commit==4.4.0
 propcache==0.3.2
+proto-plus==1.26.1
+protobuf==6.33.1
 psutil==7.1.0
 pyarrow==22.0.0
 pyarrow-hotfix==0.7
 pyasn1==0.6.1
+pyasn1_modules==0.4.2
 pycparser==2.23
 pydantic==2.11.9
 pydantic-settings==2.12.0

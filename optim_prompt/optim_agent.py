@@ -31,9 +31,9 @@ class EvaluationOutput(BaseModel):
 
 def get_answer_node(state: State):
     results = []
-    for query in state.queries:
+    for query in state['queries']:
         result = call_sysprompt_api(
-            system_prompt=state.cur_system_prompt,
+            system_prompt=state['cur_system_prompt'],
             query=query
         )
         query_result = result['response']
@@ -42,14 +42,13 @@ def get_answer_node(state: State):
     return {"query_results": results, "cur_iter": state["cur_iter"] + 1}
 
 def eval_node(state: State):
-    queries_len = len(state.queries)
-    query_results = []
-    if queries_len > 0:
-        with open("eval/data/generation.jsonl", "r", encoding="utf-8") as f:
-            for line in f:
-                query_results.append(json.loads(line))
-    else:
-        raise ValueError("No queries provided for evaluation.")
+    queries_len = len(state['queries'])
+    all_query_results = []
+    with open("optim_prompt/data/naive_query_results.jsonl", "r", encoding="utf-8") as f:
+        for line in f:
+            all_query_results.append(json.loads(line))
+
+    query_results = all_query_results[-queries_len:]
 
     chain = eval_prompt | llm.with_structured_output(EvaluationOutput)
 
@@ -57,9 +56,9 @@ def eval_node(state: State):
     faithfulness_scores = []
     context_utility_scores = []
     improvement_suggestions = []
-    for query_result in query_results:
+    for idx, query_result in enumerate(query_results):
         score = chain.invoke({
-            "query": query_result['query'],
+            "query": state['queries'][idx],
             "answer": query_result['answer'],
             "context": query_result['context'],
         })
@@ -76,7 +75,7 @@ def eval_node(state: State):
 
     # Save the current prompt and its scores to a JSON file
     saved_prompt = {
-        "prompt": state.cur_system_prompt,
+        "prompt": state['cur_system_prompt'],
         "answer_relevance_score": answer_relevance_score,
         "faithfulness_score": faithfulness_score,
         "context_utility_score": context_utility_score
@@ -99,27 +98,27 @@ def eval_node(state: State):
     return {"cur_score": scores, "improvement_suggestions": improvement_suggestions}
 
 def update_best_prompt_node(state: State):
-    if state.cur_score > state.best_score:
+    if state['cur_score'] > state['best_score']:
         return {
-            "best_score": state.cur_score,
-            "best_system_prompt": state.cur_system_prompt
+            "best_score": state['cur_score'],
+            "best_system_prompt": state['cur_system_prompt']
         }
     else:
         return {
-            "best_score": state.best_score,
-            "best_system_prompt": state.best_system_prompt
+            "best_score": state['best_score'],
+            "best_system_prompt": state['best_system_prompt']
         }
 
 def generate_prompt_node(state: State):
     chain = generate_prompt_prompt | llm
     result = chain.invoke({
-        "best_system_prompt": state.best_system_prompt,
-        "queries": state.queries,
-        "generated_answers": state.query_results,
-        "cur_system_prompt": state.cur_system_prompt,
-        "improvement_reasons": " ".join(state.improvement_suggestions)
+        "best_system_prompt": state['best_system_prompt'],
+        "queries": state['queries'],
+        "generated_answers": ", ".join(state['query_results']),
+        "cur_system_prompt": state['cur_system_prompt'],
+        "improvement_reasons": ", ".join(state['improvement_suggestions'])
     })
-    return {"cur_system_prompt": result}
+    return {"cur_system_prompt": result.content}
 
 def should_continue(state: State) -> bool:
     return {"should_continue": state["cur_iter"] + 1 < state["max_iters"]}
@@ -129,7 +128,7 @@ graph_builder.add_node("get_answer_node", get_answer_node)
 graph_builder.add_node("eval_node", eval_node)
 graph_builder.add_node("update_best_prompt_node", update_best_prompt_node)
 graph_builder.add_node("generate_prompt_node", generate_prompt_node)
-graph_builder.add_conditional_node("should_continue", should_continue)
+graph_builder.add_node("should_continue", should_continue)
 
 
 graph_builder.add_edge(START, "get_answer_node")

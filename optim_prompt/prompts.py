@@ -32,7 +32,8 @@ Calculate the composite score based on criteria above. You **MUST** output only 
 
 eval_prompt = ChatPromptTemplate.from_messages(
     [
-        ('system', eval_template)
+        ('system', eval_template),
+        ("human", "Evaluate the answer strictly following the instructions above.")
     ]
 )
 
@@ -57,7 +58,7 @@ The primary focus for this refinement must be to **enhance the objectivity, accu
 ---
 # Key Constraints for the NEW System Prompt:
 
-1.  **Mandatory Placeholders:** The new system prompt **MUST** retain and utilize the original placeholders from the template prompt. If the original prompt included variables like `{content_data}`, `{response_type}`, or others, the new prompt **must** include them.
+1.  **Mandatory Placeholders:** The new system prompt **MUST** retain and utilize the original placeholders from the template prompt. If the original prompt included variables like "content_data", "response_type", or others, the new prompt **must** include them.
 2.  **Focus:** The new instructions should guide the model to produce answers that are more **relevant to the query** and more **faithful to the retrieved context**, specifically based on the `Reason for Improvement`.
 3.  **Output Format:** Provide only the text of the new system prompt.
 
@@ -67,7 +68,8 @@ The primary focus for this refinement must be to **enhance the objectivity, accu
 
 generate_prompt_prompt = ChatPromptTemplate.from_messages(
     [
-        ('system', generate_prompt_template)
+        ('system', generate_prompt_template),
+        ("human", "Generate a new better system prompt following the instructions above.")
     ]
 )
 

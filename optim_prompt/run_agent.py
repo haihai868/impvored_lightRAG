@@ -1,12 +1,15 @@
 from optim_agent import graph
 from lightrag.prompt import PROMPTS
 
+with open("optim_prompt/data/questions.txt", "r", encoding="utf-8") as f:
+    questions = [line.strip() for line in f if line.strip()]
+
 
 res = graph.invoke({
-    "queries": ["What is the capital of France?", "What is the population of France?"],
+    "queries": questions,
     "best_score": 0.0,
     "cur_system_prompt": PROMPTS['naive_rag_response'],
     "best_system_prompt": PROMPTS['naive_rag_response'],
     "cur_iter": 0,
-    "max_iters": 5,
+    "max_iters": 3,
 })
